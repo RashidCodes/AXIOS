@@ -121,7 +121,7 @@ axios.all([
 
 
 
-## CUSTOM HEADERS
+### CUSTOM HEADERS
 ```bash
 const config = {
     headers: {
@@ -191,6 +191,7 @@ axios('https://jsonplaceholder.typicode.com/todoss?_limit=5', {
 
 
 ### CANCEL TOKEN
+If for some reason you want to cancel the request...
 ```bash
 const source = axios.CancelToken.source();
 
@@ -204,7 +205,7 @@ axios('https://jsonplaceholder.typicode.com/todos?_limit=5', {
     }
 })
 
-// if for some reason you want to cancel the request
+
 
 if(true){
     source.cancel('Request cancelled')
