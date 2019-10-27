@@ -29,7 +29,6 @@ axios({
 
 
 OR 
-
 axios
 .get('https://jsonplaceholder.typicode.com/todos?_limit=5')
 .then(res => showOutput(res))
@@ -52,6 +51,7 @@ axios('https://jsonplaceholder.typicode.com/todos?_limit=5', {
 .catch(err => console.log(err))
 ```
 
+
 ### POST REQUEST
 ```bash
 axios({
@@ -66,8 +66,6 @@ axios({
 
 
 OR 
-
-
 axios.post('https://jsonplaceholder.typicode.com/todos', {
     title : 'Accra',
     completed: false
@@ -207,6 +205,7 @@ axios('https://jsonplaceholder.typicode.com/todos?_limit=5', {
 })
 
 // if for some reason you want to cancel the request
+
 if(true){
     source.cancel('Request cancelled')
 }
